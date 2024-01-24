@@ -69,7 +69,7 @@ nav.navig-one {
     margin-left: 6%;
 }
 
-#abt {
+#abt, .forms-btn {
     width: 165px;
     padding: 15px 20px;
     border: none;
@@ -78,7 +78,7 @@ nav.navig-one {
     background: #000000;
     transition: 1s;
 }
-#abt:hover {
+#abt:hover, .forms-btn:hover {
     transform: scale(1.080);
 }
 
@@ -96,7 +96,7 @@ nav.navig-one {
     color: #333;
 }
 
-#abt a {
+#abt a, .forms-btn {
     color: #fff;
     font-size: 15px;
     font-weight: 500;
@@ -215,12 +215,13 @@ nav.navig-two {
             ;}
 .image-grid-plant button {position: relative;left: 90%;margin-top: 4rem;}
 .product-page {
-    background: #faeccf;
+    background: #8b8b8b;
     width: 100%;
     height: 900px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 0;
 }
 
 .product-text {
@@ -242,7 +243,7 @@ nav.navig-two {
 .product-text h2::before {
   content: "";
   position: absolute;
-  bottom: 44%;
+  top: 5vh;
   left: 22%;
   width: 51%;
   border-bottom: 2px solid #ffffff;
@@ -384,7 +385,7 @@ footer {
     position: relative;
 }
 
-.elements-top img {
+.elements-top img, .logo img {
     width: 5vh;
 }
 
@@ -426,4 +427,40 @@ footer {
 
 .img-box img {
     width: 55vh;
+}
+.comp-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5vh 5vh;
+    text-align: center;
+}
+
+.comp-section p {
+    line-height: 4vh;
+    width: 50%;
+}
+
+.comp-section h2 {
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #333;
+    margin: 3vh 0;
+    position: relative;
+}
+.comp-section h2::after {
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 2px;
+    background: #8b8b8b;
+    left: 0;
+    top: 4vh;
+}
+p.no-promo {
+    color: #8b8b8b;
+    font-weight: 600;
+    text-decoration: none;
 }
