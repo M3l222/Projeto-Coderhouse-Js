@@ -33,7 +33,7 @@
             <p>Na Idea, simplificamos a experiência de compra para tornar tudo confortável.<br>
             Navegar por nossa seleção de produtos é uma jornada descomplicada, onde a facilidade e acessibilidade está no centro de nossa proposta.<br>
             Nossos produtos são selecionados e tratados com carinho pra você sentir que já te pertence ao toque.</p>
-        <button id="abt"><a href="#Lorem Ipsum" title="Lorem Ipsum" rel="nofollow">Quero saber mais</a></button>
+        <a href="#" title="Lorem Ipsum" rel="nofollow" id="abt">Quero saber mais</a>
         </div>
     </div>
     </div>
@@ -83,30 +83,26 @@
             <div class="img-box-two"><img src="images/promocao-1.jpg" alt="Imagem 3">
                 <h2>Puff de Couro</h2>
                 <p class="no-promo">R$89,90</p>
-                <button class="forms-btn" onclick="processarCompra('Puff de Couro')" title="Entre em contato e faça o orçamento do produto">Comprar</a></button>
+                <button class="forms-btn" onclick="processarCompra('Puff de Couro')" title="Entre em contato e faça o orçamento do produto">Comprar</button>
             </div>
             <div class="img-box-two"><img src="images/promocao-2.jpg" alt="Imagem 3">
                 <h2>Puff com apoio</h2>
                 <p class="no-promo">R$159,90</p>
-                <button class="forms-btn" onclick="processarCompra('Puff com apoio')" title="Entre em contato e faça o orçamento do produto">Comprar</a></button>
+                <button class="forms-btn" onclick="processarCompra('Puff com apoio')" title="Entre em contato e faça o orçamento do produto">Comprar</button>
             </div>
             <div class="img-box-two"><img src="images/promocao-3.png" alt="Imagem 3">
                 <h2>Kit de vasos decorativos</h2>
                 <div>
                 <p>R$139,90</p>
-                <span>R$xx,xx</span>
+                <span id="total-promo"></span>
                 </div>
-                <button class="forms-btn" onclick="processarCompra('Kit de vasos decorativos')" title="Entre em contato e faça o orçamento do produto">Comprar</a></button>
+                <button class="forms-btn" onclick="processarCompra('Kit de vasos decorativos'); calcularDesconto('Kit de vasos decorativos', 139.90);" title="Entre em contato e faça o orçamento do produto">Comprar</button>
             </div>
         </div>
     </div>
 </div>
 
-<!-- FORMULÁRIO DO CLIENTE -->
 
-<script src="form.js"></script>
-
-<!--  -->
 <!-- FOOTER CONTACT -->
         <footer class="footer-contact">
             <div class="footer-elements">
@@ -132,7 +128,20 @@
                 <a href="#Contact" title="Contact"  class="a-top" rel="nofollow">contact</a>
             </nav>
         </div>
+
+<!-- FORMULÁRIO DO CLIENTE -->
+
+<script src="form.js"></script>
+
+<!--  -->
+
+<!-- DESCONTO -->
+
+<script src="desconto.js"></script>
+
+<!--  -->
         </footer>
 </body>
+
 </html>
 
