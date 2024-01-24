@@ -1,7 +1,12 @@
 // Solicitar o nome do usuário através do prompt
-var nomeUsuario = prompt("Por favor, digite seu nome:");
+let nomeUsuario = prompt("Digite seu nome:");
 
-alert("Seja bem-vindo, " + nomeUsuario + "!");
+// Verifica se o usuário não deixou o campo em branco
+if (nomeUsuario === null || nomeUsuario.trim() === "") {
+    alert("Por favor, digite um nome válido.");
+} else {
+    alert("Olá, " + nomeUsuario + "! Bem-vindo!");
+}
 
 
 //objeto para representar um pufe1
