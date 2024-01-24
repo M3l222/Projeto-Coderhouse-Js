@@ -2,7 +2,7 @@
 let nomeUsuario = prompt("Digite seu nome:");
 
 // Verifica se o usuário não deixou o campo em branco
-if (nomeUsuario === null || nomeUsuario.trim() === "") {
+if (nomeUsuario === if || nomeUsuario.trim() === "") {
     alert("Por favor, digite um nome válido.");
 } else {
     alert("Olá, " + nomeUsuario + "! Bem-vindo!");
