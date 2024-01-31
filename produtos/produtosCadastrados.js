@@ -1,21 +1,5 @@
-
-var nomeUsuario;
-do {
-   
-    nomeUsuario = prompt("Digite o seu nome:");
-
-   
-    if (nomeUsuario === null || nomeUsuario.trim() === "") {
-        alert("Por favor, digite um nome válido.");
-    }
-} while (nomeUsuario === null || nomeUsuario.trim() === "");
-
-
-alert("Olá, " + nomeUsuario + "! Bem-vindo!");
-
-
 //objeto para representar um pufe1
-var pufe = {
+const pufe = {
     cor: "marrom",
     material: "couro",
     estilo: "clássico",
@@ -34,7 +18,7 @@ var pufe = {
   
 
   // objeto para representar um pufe com apoio
-var pufeComApoio = {
+const pufeComApoio = {
     cor: "marrom",
     material: "couro",
     estilo: "clássico",
@@ -55,7 +39,7 @@ var pufeComApoio = {
   console.log(pufeComApoio.descricao());
   
   // objeto para representar um vaso decorativo
-var vasoDecorativo = {
+const vasoDecorativo = {
     cor: "branco",
     material: "cerâmica",
     estilo: "moderno",
