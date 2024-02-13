@@ -1,14 +1,21 @@
-    // #desconto
+// Função para calcular o desconto
+function calcularDesconto(idProduto) {
+    // Elemento onde o resultado do desconto será exibido
+    var elemento = document.querySelector('#produto-' + idProduto + ' .total-promo');
 
-  // Função para processar a compra
- function calcularDesconto(produto, valorOriginal) {
+    // Valor original do produto
+    var valorOriginal = parseFloat(document.querySelector('#produto-' + idProduto + ' .no-promo').textContent.replace('R$', ''));
+
     // Calcular desconto de 20%
     var desconto = 0.20;
     var valorComDesconto = valorOriginal - (valorOriginal * desconto);
 
-    // Atualizar o conteúdo do span
-    document.getElementById("total-promo").textContent = "R$" + valorComDesconto.toFixed(2);
+    // Atualizar o HTML com o desconto
+    elemento.textContent = "R$" + valorComDesconto.toFixed(2);
+}
 
-    console.log("Desconto calculado para", produto, ": R$", valorComDesconto.toFixed(2));
-  }
-calcularDesconto('Kit de vasos decorativos', 139.90); 
+// Chamar a função calcularDesconto para cada produto assim que a página for carregada
+document.addEventListener('DOMContentLoaded', function() {
+    calcularDesconto(1);
+    calcularDesconto(2);
+});

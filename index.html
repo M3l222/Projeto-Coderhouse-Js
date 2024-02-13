@@ -54,53 +54,17 @@
         <p>Os agendamentos servem para personalizarmos o atendimento, marcar visita e realizarmos a compra sem que o cliente fique com dúvidas. Também acordamos o envio dos produtos na loja física, de modo que, facilite caso não possa transportar o móvel.</p>
         <p>Estamos ansiosos para te atender. Sinta-se em casa!</p>
     </div>
-   <!-- FOREACH SECTION -->
-<!--    <div class="wrapper">
-   <div class="align_title">
-   <h2>Nossos produtos</h2>
-</div>
-    <div class="image-grid-plant">
-        
-        <div class="img-box"><img src="images/produto-1.png" alt="Imagem 1"><h3>Estofados</h3></div>
-        <div class="img-box"><img src="images/produto-2.png" alt="Imagem 2"><h3>Estantes</h3></div>
-        <div class="img-box"><img src="images/produto-6.png" alt="Imagem 6"><h3></h3></div> -->
-        <!-- <div class="img-box"><img src="images/produto-4.png" alt="Imagem 3"><h3>Vasos</h3></div>
-        <div class="img-box"><img src="images/produto-3.png" alt="Imagem 4"><h3>Iluminárias</h3></div> -->
-        <!-- <div class="img-box"><img src="images/produto-9.png" alt="Imagem 9"><p>Phasellus vulputate risus ut eros auctor, vitae volutpat dui condimentum. Vestibulum id ex vel ipsum ultrices malesuada id efficitur dui. 
-                Suspendisse potenti. Sed porta pharetra metus nec finibus. Aliquam mattis nisl sed nibh suscipit euismod.</p></div> -->
-        <!-- <button id="abt"><a href="#Lorem Ipsum" title="Lorem Ipsum" rel="nofollow">Lorem Ipsum</a></button> -->
 
- <!--      </div>
-    </div> --> 
 <!-- PRODUCT SECTION -->
 <div class="product-page">
     <div class="wrapper">
         <div class="product-text">
             <h2>Produtos disponíveis</h2>
-            <!-- <p>Toda semana um móvel no precinho para você levar pra casa! Confira os produtos com desconto: </p> -->
         </div>
-        <div class="product-elements">
-            <div class="img-box-two"><img src="images/promocao-1.jpg" alt="Imagem 3">
-                <h2>Puff de Couro</h2>
-                <p class="no-promo">R$89,90</p>
-                <button class="forms-btn" onclick="processarCompra('Puff de Couro')" title="Entre em contato e faça o orçamento do produto">Comprar</button>
-            </div>
-            <div class="img-box-two"><img src="images/promocao-2.jpg" alt="Imagem 3">
-                <h2>Puff com apoio</h2>
-                <p class="no-promo">R$159,90</p>
-                <button class="forms-btn" onclick="processarCompra('Puff com apoio')" title="Entre em contato e faça o orçamento do produto">Comprar</button>
-            </div>
-            <div class="img-box-two"><img src="images/promocao-3.png" alt="Imagem 3">
-                <h2>Kit de vasos decorativos</h2>
-                <div>
-                <p>R$139,90</p>
-                <span id="total-promo"></span>
-                </div>
-                <button class="forms-btn" onclick="processarCompra('Kit de vasos decorativos'); calcularDesconto('Kit de vasos decorativos', 139.90);" title="Entre em contato e faça o orçamento do produto">Comprar</button>
-            </div>
-        </div>
+        <div id="product-list" class="product-elements"></div>
     </div>
 </div>
+
 
 
 <!-- FOOTER CONTACT -->
@@ -133,14 +97,18 @@
 
 <script src="uteis/form.js"></script>
 
-<!--  -->
+<!-- GERADOR DE PRODUTOS -->
+
+<script src="produtos/criadorDeProdutos.js"></script>
+
 
 <!-- DESCONTO -->
 
-<script src="descontos/desconto.js"></script>
+<!-- <script src="descontos/desconto.js"></script> -->
 
-<!--  -->
-        </footer>
+
+
+</footer>
 </body>
 
 <script src="saudacao/saudacao.js"></script>
