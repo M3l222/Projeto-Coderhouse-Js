@@ -20,9 +20,10 @@ function processarCompra(produto) {
 
         // #Alerta de agradecimento
         alert("Obrigado pela compra, entraremos logo em contato!");
-        
+
     } else {
         // Tratar o caso em que o usuário cancela algum prompt
         alert("Compra cancelada. Preencha todas as informações.");
     }
 }
+// #teste
