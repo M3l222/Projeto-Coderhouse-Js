@@ -10,4 +10,4 @@ meuEmitter.on('mensagem', (mensagem) => {
 });
 
 // Emitindo o evento 'mensagem' com um argumento
-meuEmitter.emit('mensagem', 'Seja Bem Vindo');
+meuEmitter.emit('mensagem', 'Um prazer te receber');
