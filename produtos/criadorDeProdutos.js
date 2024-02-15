@@ -27,6 +27,7 @@ function geradorDeProdutosSection() {
                 <p class="promo">${precoFormatado}</p>
                 <button class="forms-btn" onclick="processarCompra('${produto.name}')" title="Entre em contato e faça o orçamento do produto">Comprar</button>
             </div>
+          
         `;
     
         // Adicionar o HTML dos produtos na lista 
