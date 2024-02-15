@@ -4,6 +4,6 @@ var botoes = document.querySelectorAll('.forms-btn');
 // Iterar sobre cada botão e adicionar um ouvinte de evento de clique
 botoes.forEach(function(botao) {
   botao.addEventListener('click', function() {
-    console.log('Um botão foi clicado!');
+    console.log('O botão foi clicado!');
   });
 });
