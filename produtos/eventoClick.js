@@ -1,9 +1,9 @@
-// Criar um botão
-var botao = document.createElement('button');
-botao.textContent = 'Clique Aqui';
-document.body.appendChild(botao);
+// Selecionar todos os elementos com a classe 'forms-btn'
+var botoes = document.querySelectorAll('.forms-btn');
 
-// Adicionar um ouvinte de evento de clique ao botão
-botao.addEventListener('click', function() {
-  alert('O botão foi clicado!');
+// Iterar sobre cada botão e adicionar um ouvinte de evento de clique
+botoes.forEach(function(botao) {
+  botao.addEventListener('click', function() {
+    console.log('Um botão foi clicado!');
+  });
 });
