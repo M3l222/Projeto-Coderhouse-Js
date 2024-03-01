@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #232332;
+    background: #faeccf;
+}
+
+.menu-top {
+    width: 100%;
+    background: #fff;
+    height: 85px;
+}
+
+.elements-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 0.75rem;
+    margin: 0% 10% 0% 10%;
+    align-items: center;
+}
+
+.wrapper {
+    margin-left: 5%;
+    width: 90%;
+    margin-right: 5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav.navig-one {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.a-top {
+    color: #232323;
+    font-size: 16px;
+    font-weight: 100;
+}
+.a-top:hover {
+    color: #4e4e4e;
+}
+.elements-top img, .logo img {
+    width: 5vh;
+}
+
+.logo_topo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+.align_svg svg {
+    width: 15px;
+    height: 20px;
+}
+
+.justify-content.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.align_svg {
+    display: flex;
+    gap: 2vh;
+    align-items: center;
+}
+
+.container h3 {
+    margin: 15px 0px;
+}
+
+.container {
+    width: 50%;
+    background: #fff;
+    margin-top: 5vh;
+    padding: 10vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5vh;
+}
+
+
+.container a {
+    width: 60vh;
+    height: 6vh;
+    display: flex;
+    transition: 1s;
+    align-items: center;
+    background: #f1eeec;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    border-radius: 3vh;
+    padding: 4vh;
+    color: #5b5956;
+}
+
+.container a:hover {color: #a98146;transform: scale(1.030);background: #cbcbcb;}
+
+
+footer.footer-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+    background: #fff;
+    padding: 5vh;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+}
+
+.social-icons svg {
+    width: 30px;
+    height: 15px;
+}
+
+.footer-elements {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
