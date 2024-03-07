@@ -68,7 +68,7 @@ nav.navig-one {
     margin-left: 6%;
 }
 
-#abt, .forms-btn {
+#abt, .forms-btn, #yesBtn, #noBtn {
     width: 185px;
     padding: 15px 20px;
     border: none;
@@ -78,7 +78,7 @@ nav.navig-one {
     transition: 1s;
     color: #fff;
 }
-#abt:hover, .forms-btn:hover {
+#abt:hover, .forms-btn:hover, #yesBtn:hover, #noBtn:hover {
     transform: scale(1.080);
 }
 
@@ -262,7 +262,6 @@ footer {
     height: 145px;
     padding: 20px 0;
     text-align: center;
-    margin-top: 10%;
 }
 
 .social-icons {
@@ -475,4 +474,39 @@ p.no-promo {
 
 p.promo {color: #cd3a00;
     font-weight: 600;
+}
+.modal-overlay {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  width: 50%;
+  height: auto;
+  border-radius: 8vh;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.modal-content {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5vh;
+}
+
+
+
+.modal-content p {
+    letter-spacing: 4px;
 }
