@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #232332;
+    background: #8b8b8b;
+}
+
+.menu-top {
+    width: 100%;
+    background: #fff;
+    height: 85px;
+}
+
+.elements-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 0.75rem;
+    margin: 0% 10% 0% 10%;
+    align-items: center;
+}
+
+.wrapper {
+    margin-left: 5%;
+    width: 90%;
+    margin-right: 5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav.navig-one {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.a-top {
+    color: #232323;
+    font-size: 16px;
+    font-weight: 100;
+}
+.a-top:hover {
+    color: #4e4e4e;
+}
+.elements-top img, .logo img {
+    width: 5vh;
+}
+
+.logo_topo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+.product-text h2 { 
+    color: #fff;
+    letter-spacing: 15px;
+    font-weight: 100;
+    width: auto;
+    position: relative;
+
+}
+.product-text h2::before{
+    position: absolute;
+    content:"";
+    width: 50%;
+    height: 2px;
+    top: 100%;
+    left: 22%;
+    background: #fff;
+}
+
+
+.product-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4vh;
+    flex-direction: column;
+    gap: 3vh;
+}
+.product-text p {
+    width: 50%;
+    text-align: center;
+    color: #ccc;
+    line-height: 4vh;
+}
+
