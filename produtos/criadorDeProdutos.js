@@ -25,7 +25,7 @@ function geradorDeProdutosSection() {
                 <h2>${produto.name}</h2>
                 <p class="no-promo">R$ ${produto.price}</p>
                 <p class="promo">${precoFormatado}</p>
-                <button class="forms-btn" onclick="processarCompra('${produto.name}')" title="Entre em contato e faça o orçamento do produto">Comprar</button>
+                <button class="forms-btn" onclick="processarCompra('${produto.name}')" title="Entre em contato e faça o orçamento do produto">Fazer orçamento</button>
             </div>
           
         `;

@@ -4,23 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Idea Vintage Bazar</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/noBtn-page.css">
     <link rel="icon" href="images/favicon.png" type="image/png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+ir9qV4aKz5Kt87Fm0VfP5g5BZp5w5+n5tu27izXGP3AEdj" crossorigin="anonymous">
 </head>
 <body>
-    <!-- MODAL -->
-    <div class="modal-overlay" id="modal">
-  <div class="modal">
-    <div class="modal-content">
-      <p>Você é de São Paulo?</p>
-      <button id="yesBtn">Sim</button>
-      <button id="noBtn">Não</button>
-    </div>
-  </div>
-</div>
-    <!-- HEADER NAV -->
-    <header>
+    <!-- NAV -->
+<header>
         <div class="menu-top">
         <div class="elements-top">
             <div class="logo_topo">
@@ -35,50 +24,19 @@
     </div>
         </div>
     </header>
-    <!-- WELCOME SECTION -->
-    <div class="welcome-page">
-        <div class="wrapper">
-        <div class="text-welcome">
-            <h2>Viva confortável</h2>
-            <p>Na Idea, simplificamos a experiência de compra para tornar tudo confortável.<br>
-            Móveis personalizados e feitos sob medida. Faça um orçamento e descubra novas possibilidades de mobiliar seu espaço!</p>
-        <a href="#" title="Lorem Ipsum" rel="nofollow" id="abt">Quero saber mais</a>
-
+    <!-- Mensagem section -->
+    <div class="message">
+        <div class="message-content">
+            <img src="images/noBtn-image.png" title="Não atendemos em São Paulo">
+            <h3>Ops . . . !</h3>
+            <span>Ainda não atendemos fora de São Paulo</span>
+            <p>Mas continue olhando o catálogo!</p>
         </div>
     </div>
-    </div>
+    
 
-    <div class="wrapper comp-section">
-        <div class="logo">
-        <h2>Sobre a Idea</h2>
-        <img src="images/logo.png" alt="logo">
-        </div>
-        <p>Seja bem-vindo à Idea Bazar Vintage!</p>
-        <p>A Idea Bazar Vintage é mais do que um simples estabelecimento comercial; é um tesouro de descobertas para aqueles que apreciam a estética clássica e a qualidade intemporal dos móveis vintage.</p>
-        <p>Navegue pelo nosso catálogo virtual e descubra uma variedade de estofados, vasos, mesas de centro e luminárias vintage disponíveis para personalização e encomenda sob medida. </p>
-        <div class="logo">
-        <h2>Como posso orçar?</h2>
-        <img src="images/logo.png" alt="logo">
-        </div>
-        <p>Abaixo, vai encontrar um catálogo de produtos que já produzimos e que possa se interessar. Contamnos com uma equipe de designers e arquitetos para podermos criar e deixar sua encomenda sob-medida.</p>
-        <p>Os agendamentos servem para personalizarmos o atendimento, marcar visita e realizarmos a encomenda sem que o cliente fique com dúvidas. Também acordamos o envio dos produtos na loja física, de modo que, facilite caso não possa transportar o móvel.</p>
-        <p>Estamos ansiosos para te atender. Sinta-se em casa!</p>
-    </div>
-
-<!-- PRODUCT SECTION -->
-<div class="product-page">
-    <div class="wrapper">
-        <div class="product-text">
-            <h2>Produtos do catálogo em oferta</h2>
-        </div>
-        <div id="product-list" class="product-elements"></div>
-    </div>
-</div>
-
-
-
-<!-- FOOTER CONTACT -->
-        <footer class="footer-contact">
+    <!-- FOOTER CONTACT -->
+    <footer class="footer-contact">
             <div class="footer-elements">
             <h2>Idea Vintage Bazar</h2>
             <div class="social-icons">
@@ -102,34 +60,6 @@
                 <a href="#Contact" title="Contact"  class="a-top" rel="nofollow">contact</a>
             </nav>
         </div>
-            
-<!--MODAL -->
-
-<script src="saudacao/modal.js"></script>
-
-            
-<!-- FORMULÁRIO DO CLIENTE -->
-
-<script src="uteis/form.js"></script>
-
-<!-- GERADOR DE PRODUTOS -->
-
-<script src="produtos/criadorDeProdutos.js"></script>
-
-<!--CEP-->
-<!-- div class="CEP">
-    <label for="cepInput">Digite seu CEP:</label>
-    <input type="text" id="cepInput">
-    <button onclick="buscarEndereco()">Buscar</button>
-    <div id="endereco"></div>
-</div> -->
-<script src="script.js"></script>
-
-
-
-
-</footer>
+    </footer>
 </body>
-
 </html>
-
