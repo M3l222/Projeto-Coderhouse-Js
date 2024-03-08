@@ -14,24 +14,19 @@ function geradorDeProdutosSection() {
 
     //CRIAR HTML
     criadorDeProdutos.forEach(function(produto) {
-        // Calcular o preço com desconto
-        var precoOriginal = parseFloat(produto.price.replace(',', '.'));
-        var precoComDesconto = precoOriginal * (1 - produto.desconto);
-        var precoFormatado = precoComDesconto.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'});
-
-        var produtoHTML = `
-            <div class="img-box-two" id="${produto.id}">
-                <img src="${produto.image}" alt="${produto.name}">
-                <h2>${produto.name}</h2>
-                <p class="no-promo">R$ ${produto.price}</p>
-                <p class="promo">${precoFormatado}</p>
-                <button class="forms-btn" onclick="processarCompra('${produto.name}')" title="Entre em contato e faça o orçamento do produto">Fazer orçamento</button>
-            </div>
-          
-        `;
+       var produtoHTML = `
+    <div class="products">
+        <div class="img-box-two" id="${produto.id}">
+            <img src="${produto.image}" alt="${produto.name}">
+            <h2>${produto.name}</h2>
+            <button class="forms-btn" onclick="addToCart('${produto.id}', '${produto.name}')" title="Fazer orçamento">Fazer orçamento</button>
+        </div>
+    </div>
+`;
     
         // Adicionar o HTML dos produtos na lista 
         listaDeProdutosElement.innerHTML += produtoHTML;
+
     });
 }
 

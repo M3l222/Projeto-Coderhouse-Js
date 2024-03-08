@@ -37,7 +37,8 @@ a {
 nav.navig-one {
     display: flex;
     flex-direction: row;
-    gap: 15px;
+    gap: 3vh;
+    align-items: center;
 }
 
 .a-top {
@@ -510,3 +511,25 @@ p.promo {color: #cd3a00;
 .modal-content p {
     letter-spacing: 4px;
 }
+#myForm {
+    display: none;
+}
+
+ul#cart {
+    list-style: none;
+}
+
+.navig-one svg {
+    fill: #000;
+    width: 25px;
+    height: 35px;
+}
+
+#cart-count {
+    font-size: 15px;
+    color: #cc3100;
+    font-weight: 600;
+}
+.cart-name {
+        display: none;
+    }
