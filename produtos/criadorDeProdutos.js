@@ -1,9 +1,9 @@
     // ARRAY DOS PRODUTOS
 
      var criadorDeProdutos = [
-    { name: "Puff de couro", image: "images/promocao-1.jpg", price: "89,90", id: 1, desconto: 0.10 },
-    { name: "Puff com apoio", image: "images/promocao-2.jpg", price: "149,90", id: 2, desconto: 0.15 },
-    { name: "Kit de vasos decorativos", image: "images/promocao-3.png", price: "109,99", id: 3, desconto: 0.20 }
+    { name: "Puff de couro", image: "images/promocao-1.jpg" id: 1,},
+    { name: "Puff com apoio", image: "images/promocao-2.jpg", id: 2,},
+    { name: "Kit de vasos decorativos", image: "images/promocao-3.png", id: 3,}
 ];
 
 

@@ -6,7 +6,9 @@
 body {
     font-family: 'Poppins', sans-serif;
     color: #232332;
-
+}
+header {
+    transition: transform 1s;
 }
 
 .menu-top {
@@ -533,3 +535,108 @@ ul#cart {
 .cart-name {
         display: none;
     }
+
+.icon-cart span {
+    display: flex;
+    background: #c55;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    border-radius: 5vh;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 40%;
+    left: 65%;
+}
+
+.icon-cart svg {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.icon-cart {
+    position: relative;
+}
+
+.cart_tab {
+    width: 40vh;
+    background: #353432;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    inset: 0 -40vh 0 auto;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    transition: 1s;
+    z-index: 1000;
+}
+body.showCart .cart_tab{
+    inset: 0 0 0 auto;
+}
+body.showCart header {
+    transform: translateX(-250px);
+}
+.cart_tab h2 {
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+}
+.cart_btn {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.cart_btn button {
+    background: #1e1e1e;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    color: #fff;
+}
+
+.cart_btn .close_btn {
+    color: #000;
+    background: #eee;
+}
+.list_cart .image img {
+    width: 100%
+}
+.list_cart .item {
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+    margin: 5% 10%;
+}
+.list_cart .quantity span {
+    display: inline-block;
+    width: 25px;
+    height: 20px;
+    background: #eee;
+    color: #000;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.list_cart .quantity span:nth-child(2) {
+    background: #ffffff00;
+    color: #eee;
+}
+
+.quantity {
+    display: flex;
+    width: 7vh;
+}
+
+.list_cart .item:nth-child(even) {
+    background: #eee1;
+}
+.list_cart {
+    overflow: auto;
+}
+.list_cart::webkit:scrollbar {
+    width: 0;
+}

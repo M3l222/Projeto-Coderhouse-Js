@@ -1,0 +1,8 @@
+{} products.json > {} 0
+[
+	{
+		"id": 1,
+		"name": "Puff de couro",
+		"image": "images/promocao-1.jpg",
+	}
+]
