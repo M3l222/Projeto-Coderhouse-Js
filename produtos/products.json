@@ -1,8 +1,102 @@
-{} products.json > {} 0
 [
-	{
-		"id": 1,
-		"name": "Puff de couro",
-		"image": "images/promocao-1.jpg",
-	}
+    {
+        "id": 1,
+        "name": "Puff de couro",
+        "image": "images/produto-1.png"
+    },
+    {
+        "id": 2,
+        "name": "Puff com apoio",
+        "image": "images/produto-2.png"
+    },
+    {
+        "id": 3,
+        "name": "Kit de vasos decorativos",
+        "image": "images/produto-3.png"
+    },
+    {
+        "id": 4,
+        "name": "Vaso de porcelana Coral 40cm",
+        "image": "images/produto-4.png"
+    },
+    {
+        "id": 5,
+        "name": "Vaso de porcelana Branco 25cm",
+        "image": "images/produto-5.png"
+    },
+    {
+        "id": 6,
+        "name": "Vaso de porcelana Preto 35cm",
+        "image": "images/produto-6.png"
+    },
+    {
+        "id": 7,
+        "name": "Vaso de porcelana Verde Musgo 10cm",
+        "image": "images/produto-7.png"
+    },
+    {
+        "id": 8,
+        "name": "Vaso de porcelana Branco Deitado 20cm",
+        "image": "images/produto-8.png"
+    },
+    {
+        "id": 9,
+        "name": "Sofá 2 lugares Aveludado Branco",
+        "image": "images/produto-9.png"
+    },
+    {
+        "id": 10,
+        "name": "Sofá 3 lugares Aveludado Branco",
+        "image": "images/produto-10.png"
+    },
+    {
+        "id": 11,
+        "name": "Sofá 4 lugares Verde Aveludado",
+        "image": "images/produto-11.png"
+    },
+    {
+        "id": 12,
+        "name": "Sofá 2 lugares Couro Marrom",
+        "image": "images/produto-12.png"
+    },
+    {
+        "id": 13,
+        "name": "Sofá 3 lugares de Couro Preto",
+        "image": "images/produto-13.png"
+    },
+    {
+        "id": 14,
+        "name": "Mesinha de centro 2 espaços",
+        "image": "images/produto-14.png"
+    },
+    {
+        "id": 15,
+        "name": "Mesinha de centro Pequena",
+        "image": "images/produto-15.png"
+    },
+    {
+        "id": 16,
+        "name": "Iluminária de Madeira",
+        "image": "images/produto-16.png"
+    },
+    {
+        "id": 17,
+        "name": "Lustres de papel",
+        "image": "images/produto-17.png"
+    },
+    {
+        "id": 18,
+        "name": "Iluminária Branca de Madeira e Papel",
+        "image": "images/produto-18.png"
+    },
+    {
+        "id": 19,
+        "name": "Poltrona Retrátil com Apoio",
+        "image": "images/produto-19.png"
+    },
+    {
+        "id": 20,
+        "name": "Puff 2 lugares Aveludado Cinza",
+        "image": "images/produto-20.png"
+    }
 ]

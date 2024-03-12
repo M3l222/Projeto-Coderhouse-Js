@@ -19,6 +19,7 @@
   </div>
 </div>
     <!-- HEADER NAV -->
+    <div class="container">
     <header>
         <div class="menu-top">
         <div class="elements-top">
@@ -38,28 +39,17 @@
     </div>
         </div>
     </header>
-    <!-- CART  -->
-    <div class="cart_tab">
+    </div>
+    <!-- CART -->
+    <div class="cartTab">
         <h2>Carrinho</h2>
-        <div class="list_cart">
-            <div class="item">
-            <div class="image">
-                <img src="images/promocao-1.jpg">
-            </div>
-            <div class="name">NAME</div>
-            <div class="quantity">
-                <span class="minus"><</span>
-                <span>1</span>
-                <span class="plus">></span>
-            </div>
+        <div class="listCart">
+        </div>
+        <div class="btn">
+            <button class="close">CLOSE</button>
+            <button class="checkOut">CHECKOUT</button>
         </div>
     </div>
-
-        <div class="cart_btn">
-            <button class="close_btn">CLOSE</button>
-            <button class="checkout">CHECK Out</button>
-        </div>
-    </div>    
     <!-- WELCOME SECTION -->
 
     <div class="welcome-page">
@@ -92,15 +82,13 @@
 
 <!-- PRODUCT SECTION -->
 <div class="product-page">
-    <div class="wrapper">
-        <div class="product-text">
-            <h2>Produtos em destaque</h2>
+   <div class="listProduct">
+        <div class="item">
         </div>
-        <div id="product-list" class="product-elements"></div>
-        <!-- Form -->
-        
     </div>
 </div>
+        <!-- Form -->
+        
 
 <!-- FOOTER CONTACT -->
         <footer class="footer-contact">
@@ -133,22 +121,11 @@
 <script src="saudacao/modal.js"></script>
 
             
-<!-- CARRINHO CLIENTE -->
+<!-- CARRINHO E CRIADOR DE PRODUTOS -->
 
 <script src="uteis/addCart.js"></script>
 
 
-<!-- GERADOR DE PRODUTOS -->
-
-<script src="produtos/criadorDeProdutos.js"></script>
-
-<!--CEP-->
-<!-- div class="CEP">
-    <label for="cepInput">Digite seu CEP:</label>
-    <input type="text" id="cepInput">
-    <button onclick="buscarEndereco()">Buscar</button>
-    <div id="endereco"></div>
-</div> -->
 
 </footer>
 </body>
