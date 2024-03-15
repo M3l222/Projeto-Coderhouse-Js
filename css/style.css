@@ -502,7 +502,7 @@ p.promo {color: #cd3a00;
     cursor: pointer;
 }
 
-.icon-cart span {
+.iconCart span {
     font-size: 1.1em;
     background: #c55;
     width: 30px;
@@ -517,7 +517,7 @@ p.promo {color: #cd3a00;
     left: 60%;
 }
 
-.icon-cart {
+.iconCart {
     position: relative;
 }
 
@@ -550,7 +550,7 @@ p.promo {color: #cd3a00;
     font-weight: 100;
     letter-spacing: 1px;
 }
-.cartTab {
+.cart {
     width: 400px;
     background-color: #353432;
     color: #fff;
@@ -560,41 +560,43 @@ p.promo {color: #cd3a00;
     grid-template-rows: 70px 1fr 70px;
     transition: 1s;
 }
-body.showCart .cartTab {
+body.showCart .cart {
     inset: 0 0 0 auto;
 }
 body.showCart header {
     /* transform: translateX(-250px); */
 }
-.cartTab h2 {
+.cart h2 {
     padding: 20px;
     margin: 0;
     font-weight: 300; 
 }
-.cartTab .btn {
+.cart .btn {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
-.cartTab .btn button {
-    background-color: #e8bc0e;
+.cart .btn a {
+    background-color: #555555;
     border: none;
     font-weight: 500;
     cursor: pointer;
+    color: #fff;
 }
-.cartTab .btn .close {
+.cart .btn .close {
     background-color: #eee;
+    color: #000;
 }
-.cartTab .listCart .cart-item img {
+.cart .listCart .cart-item img {
     width: 100%;
 }
-.cartTab .listCart .cart-item {
+.cart .listCart .cart-item {
     display: grid;
     grid-template-columns: 100px 150px 105px 1fr;
     gap: 10px;
     text-align: center;
     align-items: center;
 }
-.listCart .quantity span {
+.listCart .quantity span, .quantity button {
     display: inline-block;
     width: 25px;
     height: 25px;
@@ -602,6 +604,7 @@ body.showCart header {
     color: #555;
     border-radius: 50%;
     cursor: pointer;
+    border: none;
 }
 .listCart .quantity span:nth-child(2) {
     background-color: transparent;
@@ -615,4 +618,10 @@ body.showCart header {
 }
 .listCart::-webkit-scrollbar {
     width: 0;
+}
+
+.btn a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
