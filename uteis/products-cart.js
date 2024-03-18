@@ -42,7 +42,7 @@ if(products != null){
             `
         <img src="${product.image}" alt="">
             <h2>${product.name}</h2>
-            <button onclick="addCart(${product.id})">Add Cart</button>
+            <button onclick="addCart(${product.id})">Adiciona no carrinho</button>
             `;
             listProductHTML.appendChild(newProduct);
         });

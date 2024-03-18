@@ -269,94 +269,6 @@ footer {
     gap: 10px;
     margin-left: 5%;
 }
-@media only screen and (max-width: 765px) {
-  .text-welcome {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    justify-content: center;
-    align-items: flex-start;
-    text-align: left;
-    margin-bottom: 4vh;
-  }
-
-  .text-welcome p {
-    width: auto;
-  }
-  .image-grid-plant {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-  }
-  .img-box {
-    display: flex;
-    flex-direction: column;
-    width: 325px;
-    border-radius: 35px;
-  }
-  .img-box p {
-    width: 300px;
-    padding: 13px;
-  }
-  nav.navig-two {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .navig-two::before {
-      display: none;
-/*     bottom: 23% !important; */
-  }
-  #abt {
-  position: relative;
-  left: 0%;
-  margin-top: 0;
-  }
-  .product-elements {
-    display: flex;
-    flex-direction: column;
-    /* gap: 100px; */
-  }
-  .product-text {
-    align-items: flex-start;
-    display: flex;
-    justify-content: left;
-    margin-bottom: 20%;
-    margin-top: vh;
-  }
-  .img-box-two {
-    width: 100%;
-    height: auto;
-    margin-bottom: 7vh;
-  }
-  .img-box-two img {
-    width: 150px;
-    height: 170px
-  }
-  .product-page {
-    height: auto;
-  }
-  .product-text h2::before {
-    bottom: -20%;
-    left: -5%;
-  }
-  .welcome-page {
-    height: auto !important;
-  }
-  .img-box img {
-    width: 20vh !important
-  }
- .comp-section, .comp-section p {
-     width: 85% !important;
-     height: auto !important;
-     line-height: 5vh !important;
-     padding: 0 !important;
- }
-
-}
 
 .a-top:hover::after {
   width: 100%
@@ -562,6 +474,7 @@ p.promo {color: #cd3a00;
 }
 body.showCart .cart {
     inset: 0 0 0 auto;
+    z-index: 1000;
 }
 body.showCart header {
     /* transform: translateX(-250px); */
@@ -625,3 +538,108 @@ body.showCart header {
     align-items: center;
     justify-content: center;
 }
+
+/* mobile */
+@media only screen and (max-width: 765px) {
+    .text-welcome {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      justify-content: center;
+      align-items: flex-start;
+      text-align: left;
+      margin-bottom: 4vh;
+    }
+  
+    .text-welcome p {
+      width: auto;
+    }
+    .image-grid-plant {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+    }
+    .img-box {
+      display: flex;
+      flex-direction: column;
+      width: 325px;
+      border-radius: 35px;
+    }
+    .img-box p {
+      width: 300px;
+      padding: 13px;
+    }
+    nav.navig-two {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .navig-two::before {
+        display: none;
+  /*     bottom: 23% !important; */
+    }
+   
+    .product-elements {
+      display: flex;
+      flex-direction: column;
+      /* gap: 100px; */
+    }
+    .product-text {
+      align-items: flex-start;
+      display: flex;
+      justify-content: left;
+      margin-bottom: 20%;
+      margin-top: vh;
+    }
+    .img-box-two {
+      width: 100%;
+      height: auto;
+      margin-bottom: 7vh;
+    }
+    .img-box-two img {
+      width: 150px;
+      height: 170px
+    }
+    .product-page {
+      height: auto;
+    }
+    .product-text h2::before {
+      bottom: -20%;
+      left: -5%;
+    }
+    .welcome-page {
+      height: auto !important;
+    }
+    .img-box img {
+      width: 20vh !important
+    }
+   .comp-section, .comp-section p {
+       width: 85% !important;
+       height: auto !important;
+       line-height: 5vh !important;
+       padding: 0 !important;
+   }
+    .listProduct {
+       grid-template-columns: repeat(1, 1fr);
+    }
+    .cart {
+        width: 80% !important;
+    }
+    .cart .listCart .cart-item {
+        grid-template-columns: 80px 100px 100px;
+    }
+    .modal{
+        
+width: 90%;
+    }
+    .elements-top{
+        flex-direction: column
+    }
+    .menu-top{
+        height:auto
+    }
+  }
+  
