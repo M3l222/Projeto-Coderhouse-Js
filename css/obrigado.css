@@ -6,7 +6,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     color: #232332;
-    background: #faeccf;
+    background: #fbf9f5;
 }
 
 .menu-top {
@@ -58,59 +58,40 @@ nav.navig-one {
     justify-content: center;
     flex-direction: row-reverse;
 }
-.align_svg svg {
-    width: 15px;
-    height: 20px;
-}
 
-.justify-content.wrapper {
-    display: flex;
-    justify-content: center;
-}
-
-.align_svg {
-    display: flex;
-    gap: 2vh;
-    align-items: center;
-}
-
-.container h3 {
-    margin: 15px 0px;
-}
-
-.container {
-    width: 50%;
-    background: #fff;
-    margin-top: 5vh;
-    padding: 10vh;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border-radius: 5vh;
-}
-
-
-.container a {
-    width: 60vh;
-    height: 6vh;
-    display: flex;
-    transition: 1s;
-    align-items: center;
-    background: #f1eeec;
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-    border-radius: 3vh;
-    padding: 4vh;
-    color: #5b5956;
-}
-
-.container a:hover {color: #a98146;transform: scale(1.030);background: #cbcbcb;}
-
-
-footer.footer-contact {
+.message-content {
+    width: 100%;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 5vh;
-    background: #fff;
-    padding: 5vh;
+    flex-direction: column;
+}
+
+.message-content h3 {
+    color: #393939;
+    font-size: 3vh;
+    letter-spacing: 8px;
+    margin-bottom: 5vh;
+}
+
+.message-content span {
+    font-size: 1.2em;
+    color: #555555;
+    margin-bottom: 1vh;
+}
+
+.message-content p {
+    font-size: 1.01em;
+    color: #979797;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    height: auto;
+    top: 0;
+    position: relative;
 }
 
 .social-icons {
@@ -130,22 +111,13 @@ footer.footer-contact {
     justify-content: center;
     flex-direction: column;
     gap: 10px;
-    text-align: center;
+    background: #fff;
+    height: auto;
+    padding: 5vh;
 }
 @media only screen and (max-width:765px){
-    .container {
-    width: 100%;
-    background: #fff;
-    margin-top: 5vh;
-    padding: 3vh;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border-radius: 5vh;
+    .message-content h3,.message-content span {
+    padding:0 5vh;
+    text-align:center
 }
-    .align_svg svg{
-        width:40px;
-        height: 40px
-    }
-    .container a{
-        font-size: 14px;
-    }
 }

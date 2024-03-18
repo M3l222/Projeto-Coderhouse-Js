@@ -24,7 +24,7 @@ body {
     padding: 40px;
     color: rgb(255, 255, 255);
     width: 65%;
-    height: 500px;
+    height: 565px;
 }
 
 .checkoutLayout .list img {
@@ -64,6 +64,7 @@ body {
     font-weight: bold;
     color: rgb(255, 255, 255);
     background-color: rgb(171, 171, 171);
+    cursor: pointer;
 }
 
 .returnCart a {
@@ -105,6 +106,7 @@ body {
     align-items: center;
     gap: 10px;
     background: #fff;
+    word-break: normal;
     width: 100%;
     border-radius: 7vh;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -115,4 +117,41 @@ body {
     flex-direction: column;
     align-items: flex-start;
     gap: 2vh;
+}
+.error {
+    color: #ec1e1e
+}
+
+.cep_btn {
+    margin: 1vh 0;
+    border: none;
+    width: 50%;
+    height: 3vh;
+    border-radius: 5vh;
+    background: #a5a5a5;
+    color: #fff;
+    cursor: pointer;
+}
+@media only screen and (max-width:765px){
+    .checkoutLayout {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
+    padding: 20px;
+    justify-content: center;
+}
+    .checkoutLayout .right{
+        width:100%;
+        height: 700px;
+    }
+    .checkoutLayout .list img{
+        height: 5vh;
+        margin-left: 2vh;
+    }
+    .cart-item{
+        height:10vh;
+        gap: 5px;
+        word-break: normal;
+        font-size: 13px;
+    }
 }

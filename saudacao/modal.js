@@ -1,7 +1,11 @@
+ // Verificar se o modal já foi exibido
+ if (!localStorage.getItem('modalShown')) {
+  // Abrir modal
+  openModal();
+}
+
 // Modal
 var modal = document.getElementById("modal");
-
-// Botões
 var yesBtn = document.getElementById("yesBtn");
 var noBtn = document.getElementById("noBtn");
 
@@ -13,6 +17,8 @@ function openModal() {
 // Fechar o modal
 function closeModal() {
   modal.style.display = "none";
+  // Marcar o modal como exibido
+  localStorage.setItem('modalShown', 'true');
 }
 
 // Evento de clique para o botão "Sim"
@@ -27,6 +33,3 @@ noBtn.addEventListener("click", function() {
   // Redirecionamento para outra página
   window.location.href = "noBtn.html";
 });
-
-// Exibir o modal assim que a página for carregada
-window.onload = openModal;
